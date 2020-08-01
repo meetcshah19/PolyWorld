@@ -56,7 +56,7 @@ public class DefaultBiomeModel implements BiomeModel {
             return WhittakerBiome.LAKE;
         } else if (waterModel.isCoast(region)) {
             return WhittakerBiome.BEACH;
-        } else if (elevation > 0.8) {
+        } else if (elevation > 0.9) {
             if (moisture > 0.50) {
                 return WhittakerBiome.SNOW;
             } else if (moisture > 0.33) {
@@ -66,7 +66,7 @@ public class DefaultBiomeModel implements BiomeModel {
             } else {
                 return WhittakerBiome.SCORCHED;
             }
-        } else if (elevation > 0.6) {
+        } else if (elevation > 0.7) {
             if (moisture > 0.66) {
                 return WhittakerBiome.TAIGA;
             } else if (moisture > 0.33) {
@@ -74,22 +74,22 @@ public class DefaultBiomeModel implements BiomeModel {
             } else {
                 return WhittakerBiome.TEMPERATE_DESERT;
             }
-        } else if (elevation > 0.3) {
+        } else if (elevation > 0.4) {
             if (moisture > 0.83) {
                 return WhittakerBiome.TEMPERATE_RAIN_FOREST;
             } else if (moisture > 0.50) {
                 return WhittakerBiome.TEMPERATE_DECIDUOUS_FOREST;
-            } else if (moisture > 0.16) {
+            } else if (moisture > 0.25) {
                 return WhittakerBiome.GRASSLAND;
             } else {
                 return WhittakerBiome.TEMPERATE_DESERT;
             }
         } else {
-            if (moisture > 0.66) {
+            if (moisture > 0.75) {
                 return WhittakerBiome.TROPICAL_RAIN_FOREST;
-            } else if (moisture > 0.33) {
+            } else if (moisture > 0.50) {
                 return WhittakerBiome.TROPICAL_SEASONAL_FOREST;
-            } else if (moisture > 0.16) {
+            } else if (moisture > 0.25) {
                 return WhittakerBiome.GRASSLAND;
             } else {
                 return WhittakerBiome.SUBTROPICAL_DESERT;
